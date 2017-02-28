@@ -82,12 +82,71 @@
   in progress:
   \begin{itemize}
     \setlength{\itemsep}{.25cm}
-  \item now setting up standard generators (see next slide)
+  \item now setting up standard generators
   \item automatize running of plot production and publish on web page
   \item to be run at each update of generator/configuration
   \item extend set of plots as needed
   \end{itemize}
 \end{frame}
+
+\begin{frame}{Anaysis train: MM MCGen validation}
+Generator naming scheme
+\begin{itemize}
+    \item $[$generator$]\_[$version$]\_[$tune$]\_[$options$]\_[$energy$]$
+        \item e.g.Pythia$\_$6$\_$Perugia$\_$noCR$\_$13TeV
+\end{itemize}
+\includegraphics[width=\textwidth]{../fig/pwg_mm_lego_train.png}
+\end{frame}
+
+
+\begin{frame}{Automated QA of generators}
+Generator output is analyzed using validation tool
+\begin{itemize}
+    \item PWG$/$HMTF$/$macros$/$AddTaskHMTFMCMultEst.C
+    \item Output automatically published to public webpage
+\end{itemize}
+    \includegraphics[width=\textwidth]{../fig/aligenqa_webpage.png}
+\end{frame}
+
+\begin{frame}{Automated QA of generators}
+    \includegraphics[width=\textwidth]{../fig/open_page.png} \\
+    Clicking on a system (pp, p--Pb, Pb--Pb) opens list of generators for which QA is available
+\begin{itemize}
+    \item Naming scheme analogous to validation train naming scheme, trigger configuration added as suffix
+    \item Access to QA summary and to collection of independent figures
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Automated QA of generators}
+    \begin{center}
+    \includegraphics[width=.45\textwidth]{../fig/slide_a.png}
+    \includegraphics[width=.45\textwidth]{../fig/slide_b.png}\\
+    \includegraphics[width=.45\textwidth]{../fig/slide_c.png}
+    \includegraphics[width=.45\textwidth]{../fig/slide_d.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Automated QA of generators}
+    Automated QA (for now) organized in
+\begin{itemize}
+    \item pp
+    \item p-Pb
+    \item Pb-Pb
+\end{itemize}
+\vspace{.5cm}
+
+QA figures include
+\begin{itemize}
+    \item d$N$/d$\eta$, d$N$/d$p_{\text{T}}$ distributions of (un)identified particles
+    \item Sets of QA figures for different trigger classes 
+    \item Input is welcome!
+\end{itemize}
+\vspace{.5cm}
+
+TODO: link QA webpage to LEGO train page, to always have full information on generator settings
+\end{frame}
+
 
 \begin{frame}{generators}
   \begin{itemize}
