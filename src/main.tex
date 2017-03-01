@@ -32,13 +32,13 @@
   {\setcounter{framenumber}{\value{lastframe}}}
 
   \title{MC generators}
-  \subtitle{plans}
+  \subtitle{status \& plans}
 \author[Redmer, jkl]{Redmer Bertens\inst{1}, Jochen Klein\inst{2}}
 \institute[]{
   \inst{1} University of Tennessee, Knoxville \and
   \inst{2} CERN, Geneva
 }
-\date[PAG-MC meeting, Mar 1, 2017]{
+\date[PAG-MC, Mar 1, 2017]{
   PAG-MC meeting\\[.2cm]
   March 1st, 2017
 }
@@ -82,14 +82,15 @@
   in progress:
   \begin{itemize}
     \setlength{\itemsep}{.25cm}
-  \item now setting up standard generators
-  \item automatize running of plot production and publish on web page
+  \item setting up of standard generators in progress
+  \item QA plots get published on web page\\
+    (manually triggered for now)
   \item to be run at each update of generator/configuration
   \item extend set of plots as needed
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Anaysis train: MM MCGen validation}
+\begin{frame}{Anaysis train: MM\_MCGen\_validation}
 Generator naming scheme
 \begin{itemize}
     \item $[$generator$]\_[$version$]\_[$tune$]\_[$options$]\_[$energy$]$
@@ -103,7 +104,7 @@ Generator naming scheme
 Generator output is analyzed using validation tool
 \begin{itemize}
     \item PWG$/$HMTF$/$macros$/$AddTaskHMTFMCMultEst.C
-    \item Output automatically published to public webpage
+    \item Output published to public webpage
 \end{itemize}
     \includegraphics[width=\textwidth]{../fig/aligenqa_webpage.png}
 \end{frame}
@@ -144,7 +145,9 @@ QA figures include
 \end{itemize}
 \vspace{.5cm}
 
-TODO: link QA webpage to LEGO train page, to always have full information on generator settings
+TODO:\\
+link QA webpage to LEGO train page and production page (for prod QA),\\
+to always have full information on generator settings
 \end{frame}
 
 
@@ -188,6 +191,7 @@ TODO: link QA webpage to LEGO train page, to always have full information on gen
     \end{itemize}
   \item need proper validation of AMPT before doing the update
   \end{itemize}
+  will be addressed by Redmer, Alexandru, Jochen
 \end{frame}
 
 \begin{append}
